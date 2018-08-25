@@ -1,0 +1,9 @@
+{
+    "port": 8000,
+    "files": [
+        "./dist/angular-elements-starterkit/*.{html}"
+    ],
+    "server": {
+        "baseDir": "./dist/angular-elements-starterkit/"
+    }
+}

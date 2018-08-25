@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AngularElementsStarterkit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="custom-elements.js"></script>
+</head>
+
+<body>
+  <custom-hello label="First Value"></custom-hello>
+
+  <script>
+    const hello = document.querySelector('custom-hello');
+    hello.addEventListener('action', (event) => {
+      console.log(`"action" emitted: ${event.detail}`);
+    })
+    setTimeout(() => hello.label = 'Second Value', 3000);
+  </script>
+</body>
+
+</html>
